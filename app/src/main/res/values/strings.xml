@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JetpackNavigationV24213141</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="url_or_search">Url o búsqueda</string>
+    <string name="defaultTextViewValue">0</string>
+    <string name="error">ERROR</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.jetpacknavigation.fragment.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_browserFragment"
+            app:destination="@id/browserFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_calculadora"
+            app:destination="@id/calculadoraFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/browserFragment"
+        android:name="com.example.jetpacknavigation.fragment.BrowserFragment"
+        android:label="fragment_browser"
+        tools:layout="@layout/fragment_browser" />
+    <fragment
+        android:id="@+id/calculadoraFragment"
+        android:name="com.example.jetpacknavigation.fragment.CalculatorFragment"
+        android:label="fragment_calculadora"
+        tools:layout="@layout/fragment_calculadora" >
+        <action
+            android:id="@+id/action_calculadoraFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.jetpacknavigation.fragment.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="result"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.jetpacknavigation.fragment.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+</navigation>
