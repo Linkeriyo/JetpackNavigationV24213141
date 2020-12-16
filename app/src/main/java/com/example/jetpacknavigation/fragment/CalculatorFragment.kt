@@ -171,6 +171,8 @@ class CalculatorFragment : Fragment() {
                 val text = textViewNumbers.text.toString()
                 num1 = Integer.parseInt(text)
                 num1Introduced = true
+            } else {
+                num1 = Integer.parseInt(textViewNumbers.text.toString())
             }
             resetOnNext = true
         }
@@ -183,6 +185,8 @@ class CalculatorFragment : Fragment() {
                 val text = textViewNumbers.text.toString()
                 num1 = Integer.parseInt(text)
                 num1Introduced = true
+            } else {
+                num1 = Integer.parseInt(textViewNumbers.text.toString())
             }
             resetOnNext = true
         }
@@ -195,6 +199,8 @@ class CalculatorFragment : Fragment() {
                 val text = textViewNumbers.text.toString()
                 Integer.parseInt(text)
                 num1Introduced = true
+            } else {
+                num1 = Integer.parseInt(textViewNumbers.text.toString())
             }
             resetOnNext = true
         }
@@ -207,6 +213,8 @@ class CalculatorFragment : Fragment() {
                 val text = textViewNumbers.text.toString()
                 Integer.parseInt(text)
                 num1Introduced = true
+            } else {
+                num1 = Integer.parseInt(textViewNumbers.text.toString())
             }
             resetOnNext = true
         }
